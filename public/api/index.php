@@ -65,7 +65,7 @@ FROM
     AND st.departure_time >= :time
     ORDER BY tr.route_id, st.departure_time
 ) Q
-ORDER BY route_short_name, service_id, departure_time
+ORDER BY departure_time
 LIMIT 3 OFFSET 0;
 SQL;
 
